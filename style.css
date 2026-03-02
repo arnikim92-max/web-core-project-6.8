@@ -15,6 +15,111 @@
   padding: 0;
   background-color: #faf8f8;
   font-family: "TT Lakes Regular", sans-serif;
-
   overflow: auto;
+}
+body {
+  background-color: #f8f8f8;
+}
+/* телефон */
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 18px;
+    border-bottom: 0.87px solid #41f6d7;
+  }
+  .tab {
+    display: none;
+  }
+
+  .repair p {
+    display: none;
+  }
+  .checkstatus p {
+    display: none;
+  }
+  main {
+    background-color: #f8f8f8;
+  }
+  h1 {
+    display: flex;
+    align-item: inline;
+    padding: 18px 0px;
+  }
+
+  .desk {
+    display: none;
+  }
+  h3 {
+    display: none;
+  }
+
+  div.ul {
+    display: flex;
+    background-color: #f8f8f8;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 8px;
+  }
+  div.ul::-webkit-scrollbar {
+    display: none;
+  }
+  div.ul div {
+    flex-shrink: 0;
+  }
+  div.ul div:hover {
+    border: 2px solid #41f6d7;
+    background-color: white;
+  }
+  .hide {
+    display: flex;
+    align-item: center;
+    padding: 8px 0px;
+  }
+}
+
+/* планшет */
+@media (max-width: 768px) {
+body{
+  margin: 0;
+  overflow: hidden;
+}
+  header {
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 18px;
+    overflow: hidden;
+  }
+  .repair p {
+    display: none;
+  }
+  .checkstatus p {
+    display: none;
+  }
+  .b .tab {
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .c .tab .repair .checkstatus {
+    display: inline;
+    align-item: center;
+    justify-content: space-between;
+    margin-left: auto;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .repair,
+  .checkstatus {
+    display: inline;
+    align-item: center;
+    justify-content: space-between;
+    margin-left: left;
+    padding: 10px;
+  }
 }
