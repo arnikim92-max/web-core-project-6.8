@@ -80,6 +80,7 @@ p {
 }
 .b {
   display: none;
+  margin: 18px;
 }
 .c {
   display: flex;
@@ -88,6 +89,19 @@ p {
 .a {
   margin: 18px;
 }
+.desk-icon {
+  display: none;
+}
+
+.foto {
+  display: flex;
+  align-item: center;
+  justify-content: space-between;
+}
+.text img {
+}
+
+
 @media (min-width: 768px) {
   .tab {
     display: block;
@@ -107,5 +121,43 @@ p {
   }
   .text {
     width: 50%;
+  }
+}
+@media (min-width: 1120px) {
+  .desk-slide {
+    display: block;
+  }
+  header {
+    display: none;
+  }
+  .text .b {
+    display: block;
+  }
+  .desk-icon {
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .desk {
+    display: block;
+    white-space: nowrap;
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 18px;
+  }
+  .top-side {
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+  }
+  .desk-icon__1,
+  .desk-icon__2 {
+    display: flex;
+    align-item: center;
+    justify-content: space-between;
+  }
+  .f {
+
   }
 }
